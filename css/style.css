@@ -137,3 +137,16 @@ button:hover {
 #home span {
     color: coral;
 }
+
+/* Brand section  */
+.row {
+    cursor: pointer;
+}
+.row img{
+    filter: grayscale(100%);
+    transition: transform 0.3s;
+}
+.row img:hover {
+   filter: grayscale(0);
+   transform: translate(4px);
+}
