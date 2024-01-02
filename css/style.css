@@ -220,3 +220,46 @@ button:hover {
     text-align: end;
     color: black;
 }
+
+/* featured product section  */
+#featured h2 {
+  color: black;
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+ hr {
+  width: 100px;
+  height: 3px;
+  background-color: coral;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#featured p {
+  color: black;
+  margin-top: 1.5rem;
+  font-size: 17px;
+}
+#featured .product img {
+  height: 65%;
+  transition: 0.3s all;
+  border-radius: 5px;
+}
+#featured .product:hover img{
+  opacity: 0.7;
+}
+#featured .product{
+  margin-bottom: 2rem;
+}
+#featured h5 {
+  color: #000;
+}
+.product .buy-btn {
+  background: #fb774b;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+.product:hover  .buy-btn{
+  transform: translateY(0);
+  opacity: 1;
+}
