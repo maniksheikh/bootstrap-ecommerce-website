@@ -60,6 +60,7 @@ button:hover {
   font-size: 16px;
   top: 0;
   left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .navbar-light .navbar-nav .nav-link {
   padding: 0 10px;
@@ -324,27 +325,15 @@ button:hover {
 #Watches h2 {
   color: #000;
 }
-#Watches p {
-  color: #000;
-}
-#Watches .product .name {
-  color: #000;
-}
-#Watches .product img {
-  height: 65%;
-  transition: 0.3s all;
-  border-radius: 5px;
-}
-#Watches .product:hover img{
-  opacity: 0.7;
-}
+
 #Watches .product{
   margin-bottom: 2rem;
   border: 2px gray solid;
   border-radius: 10px;
-  /* gap: 10px; */
-} h2 {
-  color: #000;
+  transition: 0.3s;
+}
+#Watches .product:hover {
+  transform: translateY(6px);
 }
 #Watches p {
   color: #000;
@@ -364,9 +353,109 @@ button:hover {
 #Watches .product:hover img{
   opacity: 0.7;
 }
+
+/* /* Watches */
+#Watches h2 {
+  color: #000;
+}
+
 #Watches .product{
   margin-bottom: 2rem;
   border: 2px gray solid;
   border-radius: 10px;
-  /* gap: 10px; */
+  transition: 0.3s;
 }
+#Watches .product:hover {
+  transform: translateY(6px);
+}
+#Watches p {
+  color: #000;
+}
+#Watches .product .name {
+  color: #000;
+}
+#Watches .product .price {
+  font-size: 16px;
+  font-weight: 300;
+}
+#Watches .product img {
+  height: 65%;
+  transition: 0.3s all;
+  border-radius: 5px;
+}
+#Watches .product:hover img{
+  opacity: 0.7;
+}
+
+/* Shoes  */
+#Shoes h2 {
+  color: #000;
+}
+
+#Shoes .product{
+  margin-bottom: 2rem;
+  border: 2px gray solid;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+/* #Shoes .product:hover {
+  transform: translateY(6px);
+} */
+#Shoes p {
+  color: #000;
+}
+#Shoes .product .name {
+  color: #000;
+}
+#Shoes .product .price {
+  font-size: 16px;
+  font-weight: 300;
+}
+#Shoes .product img {
+  height: 65%;
+  transition: 0.3s all;
+  border-radius: 5px;
+}
+#Shoes .product:hover img{
+  opacity: 0.7;
+}
+
+/* footer */
+footer {
+  background-color: #222222;
+}
+  .footer img {
+    height: 60px;
+    width: 60px;
+  }
+  .footer p {
+    color: gray;
+  }
+  /* .footer h5 {
+    color: #000;
+  }
+  .footer h6 {
+    color: #000;
+  } */
+/* .copyright {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+} */
+ footer .copyright a {
+    color: #000;
+    background-color: #dbdbdb;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    transition: 0.3s;
+  }
+  footer .copyright a:hover {
+    color: #fff;
+    background-color: #fb774b;
+  }
