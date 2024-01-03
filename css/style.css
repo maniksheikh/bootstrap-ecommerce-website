@@ -78,8 +78,15 @@ button:hover {
   margin: auto;
   cursor: pointer;
   padding: 0 10px;
-  color: black;
+  /* color: black; */
   transition: 0.3s ease;
+}
+ .nav-item  #cart-icon{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
 }
 .nav-item .svg:hover,
 .nav-item .svg.active {
@@ -116,10 +123,111 @@ button:hover {
   }
   #navbarSupportedContent > ul {
     margin: 1rem;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+}
+/* cart section  */
+.cart {
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  background: var(--bg-color);
+  width: 360px;
+  min-height: 100vh;
+  padding: 20px;
+  box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  transition: 3ms;
+}
+.cart.active {
+  right: 0;
+}
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.cart-content {
+  padding: 5px;
+}
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 10px !important;
+}
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.cart-product-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.cart-price {
+  font-weight: 500;
+}
+.cart-quantity {
+  border: 1px solid var(--main-color);
+  padding: 1px 5px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 2.7rem;
+  outline-color: var(--text-color);
+  border-radius: 5px;
+  text-align: center;
+}
+.cart-remove {
+  font-size: 24px;
+  cursor: pointer;
+}
+.total {
+  display: flex;
+  justify-content: end;
+  border-top: 2px solid var(--text-color);
+  margin-top: 1.3rem;
+}
+.total-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.total-price {
+  margin-left: 0.5rem;
+}
+.btn-buy {
+  display: flex;
+  margin: 1.6rem auto;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: 0;
+  padding: 10px 17px;
+  border: none;
+}
+.btn-buy:hover {
+  background: slateblue;
+  transition: 2s;
+}
+.cart-close {
+  position: absolute;
+  top: 2rem;
+  right: 0.6rem;
+  color: var(--text-color);
+  font-size: 2rem;
+  cursor: pointer;
 }
 /* Home section  */
 #home {
@@ -402,7 +510,7 @@ button:hover {
 }
 .testimonial-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 .testimonial .col-3 {
